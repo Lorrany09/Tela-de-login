@@ -8,71 +8,70 @@ body{
     font-size: 15px;
 }
 
-main{
-    margin-top: 8rem;
+main, .titulo, .botao, .blocoCadastro{
     display: flex;
     justify-content: center;
 }
 
-.blocoCentral{
-    background-color:rgba(0, 0, 0, 0.455);
+main{
+    margin-top: 3rem;
+}
+
+.titulo{
+    margin-top: 1rem;
+}
+
+.blocoCadastro{
+    background-color:rgba(0, 0, 0, 0.455); 
     width: 28rem;
-    height: 30rem;
+    height: 33rem;
     border-radius: 3rem;
     color: white;
 }
 
-.telaDeLogin, .titulo, .botao, .criarConta{
-    display: flex;
-    justify-content: center;
-}
-
-.terceiros{
-    display: flex;
-}
-
-.email, .senha, .criarConta{
-    margin-top: 2rem;
-}
-
-
-.email, .senha, .terceiros{
-    margin-left: 2rem;
-}
-
-
-.link{
-    margin-left: 3.5rem;
-}
-
-a{
-    text-decoration: none;
+button{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: black;
     color: white;
+    font-family: 'libre baskerville', libre;
 }
 
-.criarConta a {
-    color: rgb(117, 58, 172);
-}
-
-a:hover{
-    color: orange;
+button:hover{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
     cursor: pointer;
 }
 
-#email, #senha{
-    width: 21.3rem;
+label{
+    display: block;
+}
+
+.input{
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+}
+
+input{
+    width: 25rem;
     height: 2rem;
     border-radius: 2rem;
-    border: 2px solid white;
+}
+
+input:hover{
+    background-color: antiquewhite;
 }
 
 hr{
+    background-color: white;
     width: 25rem;
     height: 1px;
-    background-color: white;
 }
 
-button{
+.botao button{
     height: 3rem;
     width: 10rem;
     border-radius: 12rem;
@@ -82,22 +81,9 @@ button{
     font-size: 20px;
 }
 
-button:hover{
+.botao button:hover{
     border: 1px solid black;
     background-color: orange;
     color: black;
     cursor: pointer;
-}
-
-input:hover{
-    background-color: beige;
-}
-
-p{
-    padding: 0;
-    margin: 0;
-}
-
-label{
-    display: block;
 }
