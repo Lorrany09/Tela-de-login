@@ -8,7 +8,7 @@ body{
     font-size: 15px;
 }
 
-main, .titulo, .botao, .blocoCadastro{
+main, .titulo, .botao, .blocoCadastro, .conjunto{
     display: flex;
     justify-content: center;
 }
@@ -23,8 +23,8 @@ main{
 
 .blocoCadastro{
     background-color:rgba(0, 0, 0, 0.455); 
-    width: 28rem;
-    height: 33rem;
+    width: 38rem;
+    height: 30rem;
     border-radius: 3rem;
     color: white;
 }
@@ -52,22 +52,35 @@ label{
 
 .input{
     margin-top: 1rem;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
 }
 
 input{
-    width: 25rem;
+    width: 15rem;
     height: 2rem;
     border-radius: 2rem;
+    border: 1px solid black;
 }
 
-input:hover{
+select{
+    width: 15.3rem;
+    height: 2.3rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+
+#data{
+    width: 15.2rem;
+    height: 2.1rem;
+}
+
+input:hover, select:hover{
     background-color: antiquewhite;
 }
 
 hr{
     background-color: white;
-    width: 25rem;
+    width: 35rem;
     height: 1px;
 }
 
