@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+    background-image: url(img/porDoSol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'libre baskerville', libre;
+    font-size: 15px;
+}
+
+main, .botao, .titulo{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    margin-top: 15rem;
+}
+
+.container{
+    background-color:rgba(0, 0, 0, 0.455); 
+    width: 36rem;
+    height: 16rem;
+    border-radius: 3rem;
+    color: white;
+}
+
+.titulo{
+    margin: 1rem 0 0 0;
+}
+
+hr{
+    background-color: white;
+    width: 34rem;
+    height: 1px;
+}
+
+p{
+    margin: 1rem 0 0 2rem;
+}
+
+.botao button{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 12rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 3rem;
+    font-family: 'libre baskerville', libre;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}

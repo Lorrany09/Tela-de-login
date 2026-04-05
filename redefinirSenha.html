@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a senha?</title>
+    <link rel="icon" href="img/sol.png" type="image/png">
+    <link rel="stylesheet" href="redefinirSenha.css">
+</head>
+<body>
+    <header>
+        <a href="esqueceuSenha.html"><button type="button" class="voltar">Voltar</button></a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="titulo">
+                <h1>Recuperação de senha</h1>
+            </div>
+            <hr>
+            <p>Defina a sua nova senha.</p>
+            <div class="senha">
+                <label for="senha">Nova senha</label>
+                <input type="password" id="senha" placeholder="Digite sua nova senha">
+            </div>
+            <div class="confirmeSenha">
+                <label for="confirmeSenha">Confirmar senha</label>
+                <input type="password" id="confirmeSenha" placeholder="Confirme a senha">
+            </div>
+            <div class="botao">
+                <button type="button" onclick="confirmarSenha()">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <script src="confirmacaoDeDados.js"></script>
+</body>
+</html>
