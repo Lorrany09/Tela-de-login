@@ -12,54 +12,47 @@
         <a href="index.html"><button type="button">Voltar</button></a>
     </header>
     <main>
-        <div class="blocoCadastro">
-            <div class="conteudo">
-                <div class="titulo">
-                    <h1>Cadastro</h1>
-                </div>
-                <hr>
-                <div class="conjunto">
-                    <div class="primeiro">
-                        <div class="input">
-                            <label for="nome">Nome completo</label>
-                            <input type="text" id="nome" placeholder="Ex: Icaro Lamartine">
-                        </div>
-                        <div class="input">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Ex: Eu@gmail.com">
-                        </div>
-                        <div class="input">
-                            <label for="senha">Senha</label>
-                            <input type="password" id="senha" placeholder="Sua senha">
-                        </div>
+        <div id="container">
+            <h1>Cadastro</h1>
+            <hr>
+            <div id="aviso"></div>
+            <div class="conjunto">
+                <div class="primeiro">
+                    <div class="input">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" placeholder="Ex: Icaro Lamartine">
                     </div>
-                    <div class="segundo">
-                        <div class="input">
-                            <label for="genero">Gênero</label>
-                            <select>
-                                <option value="mulher_cis">Mulher cis</option>
-                                <option value="homem_cis">Homem cis</option>
-                                <option value="mulher_trans">Mulher trans</option>
-                                <option value="homem_trans">Homem trans</option>
-                                <option value="nao_binario">Não binario</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-                        <div class="input">
-                            <label for="data">Data de nascimento</label>
-                            <input type="date" id="data">
-                        </div>
-                        <div class="input">
-                            <label for="senhaConf">Confirme sua senha</label>
-                            <input type="password" id="senhaConf" placeholder="Digite sua senha de novo">
-                        </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Ex: Eu@gmail.com">
+                   </div>
+                    <div class="input">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="Sua senha">
                     </div>
                 </div>
-                <div class="botao">
-                    <a href="#"><button type="button">Enviar</button></a>
+                <div class="segundo">
+                    <div class="input">
+                        <label for="genero">Gênero</label>
+                        <select id="genero">
+                            <option value="" hidden disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="data">Data de nascimento</label>
+                        <input type="date" id="data">
+                    </div>
+                    <div class="input">
+                        <label for="senhaConf">Confirme sua senha</label>
+                        <input type="password" id="confirmeSenha" placeholder="Digite sua senha de novo">
+                    </div>
                 </div>
+            </div>
+            <div class="botao">
+                <button type="button" onclick="avisar()">Enviar</button>
             </div>
         </div>
     </main>
+    <script src="confirmacaoDeDados.js"></script>
 </body>
 </html>
