@@ -14,7 +14,7 @@ main{
     justify-content: center;
 }
 
-.blocoCentral{
+.conteudo{
     background-color:rgba(0, 0, 0, 0.455);
     width: 28rem;
     height: 30rem;
@@ -22,7 +22,7 @@ main{
     color: white;
 }
 
-.telaDeLogin, .titulo, .botao, .criarConta, .lembreSenha{
+h1, .botao, .criarConta, .lembreSenha{
     display: flex;
     justify-content: center;
 }
@@ -31,8 +31,8 @@ main{
     display: flex;
 }
 
-.titulo{
-    margin-top: 1rem;
+h1{
+    margin-top: 2rem;
 }
 
 .email, .senha, .criarConta{
@@ -41,21 +41,18 @@ main{
 
 
 .email, .senha, .terceiros{
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
-
-.link{
+.terceiros a{
     margin-left: 3.5rem;
-}
-
-a{
     text-decoration: none;
     color: white;
 }
 
 .criarConta a {
     color: rgb(117, 58, 172);
+    text-decoration: none;
 }
 
 a:hover{
@@ -71,7 +68,6 @@ a:hover{
 }
 
 hr{
-    margin: 0;
     width: 25rem;
     height: 1px;
     background-color: white;
