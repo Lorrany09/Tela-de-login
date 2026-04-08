@@ -8,17 +8,17 @@ body{
     font-size: 15px;
 }
 
-main, .botao, .titulo{
+main, .botao, .titulo, p, #aviso{
     display: flex;
     justify-content: center;
 }
 
 main{
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
-.container{
-    background-color:rgba(0, 0, 0, 0.455); 
+#container{
+    background-color:rgba(0, 0, 0, 0.455);
     width: 31rem;
     height: 29rem;
     border-radius: 3rem;
@@ -33,10 +33,6 @@ hr{
     background-color: white;
     width: 28rem;
     height: 1px;
-}
-
-p{
-    margin: 1rem 0 0 2rem;
 }
 
 label{
@@ -86,4 +82,26 @@ button:hover{
 
 .senha, .confirmeSenha{
     margin: 2rem 1rem 1rem 7rem;
+}
+
+#aviso p{
+    background-color: rgba(255, 0, 0, 0.242);
+    border-radius: 1rem;
+    border: 1px solid red;
+    width: 18rem;
+    height: 1rem;
+    padding: 2rem;
+}
+
+.erro{
+    background-color: rgb(161, 2, 2);
+    border: 1px solid red;
+}
+
+.erro:hover{
+    background-color: black;
+}
+
+.erro::placeholder, .erro{
+    color: white;
 }
